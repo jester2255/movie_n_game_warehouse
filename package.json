@@ -1,0 +1,19 @@
+{
+  "name": "movie_n_game_warehouse",
+  "version": "1.0.0",
+  "description": "where i can look up my movies and games",
+  "main": "index.js",
+  "scripts": {
+    "test": "server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jester2255/movie_n_game_warehouse.git"
+  },
+  "author": "Philip Dunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jester2255/movie_n_game_warehouse/issues"
+  },
+  "homepage": "https://github.com/jester2255/movie_n_game_warehouse#readme"
+}
