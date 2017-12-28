@@ -2,18 +2,22 @@
   "name": "movie_n_game_warehouse",
   "version": "1.0.0",
   "description": "where i can look up my movies and games",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "server.js"
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jester2255/movie_n_game_warehouse.git"
-  },
-  "author": "Philip Dunn",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jester2255/movie_n_game_warehouse/issues"
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
   },
-  "homepage": "https://github.com/jester2255/movie_n_game_warehouse#readme"
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
